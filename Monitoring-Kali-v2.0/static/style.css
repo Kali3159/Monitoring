@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Form Styles */
+form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments du formulaire de passer à la ligne si nécessaire */
+    gap: 10px;
+    align-items: center; /* Alignement vertical des éléments du formulaire */
+}
+
+input[type="text"], input[type="checkbox"], button, label {
+    padding: 10px;
+    border-radius: 4px;
+}
+
+input[type="text"], input[type="checkbox"] {
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 15px; /* Ajustement du padding pour les boutons */
+    background-color: #007bff; /* Bleu */
+    color: white;
+    cursor: pointer;
+    border: none; /* Enlève la bordure des boutons */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+/* Button adjustments inside the table */
+.toggle-notifications, .remove-host {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #6c757d; /* Gris pour généraliser l'apparence */
+    color: white;
+}
+
+.toggle-notifications:hover, .remove-host:hover {
+    background-color: #5a6268; /* Un gris légèrement plus foncé au survol */
+}
+
+.status-ok {
+    color: #28a745; /* Vert */
+}
+
+.status-ko {
+    color: #dc3545; /* Rouge */
+}
+
+/* Footer Styles */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #132b44;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Clear All Hosts Button Style */
+#clearAllHosts {
+    background-color: #dc3545; /* Rouge pour le bouton de réinitialisation */
+    color: white;
+}
+
+#clearAllHosts:hover {
+    background-color: #c82333; /* Rouge plus foncé au survol */
+}

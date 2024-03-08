@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Status Monitor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Service Status Monitor</h1>
+    <div class="form-container">
+        <form id="addHostForm">
+            <input type="text" id="newHost" placeholder="Host IP Address" required>
+            <input type="text" id="hostLabel" placeholder="Host Label" required>
+            <label class="checkbox-label">
+                <input type="checkbox" id="notificationsEnabled" checked>
+                Enable Notifications
+            </label>
+            <button type="submit">Add Host</button>
+            <button id="clearAllHosts" type="button" style="background-color: #dc3545; margin-left: 10px;">Clear All Hosts</button>
+        </form>
+    </div>
+    <table id="statusTable">
+        <thead>
+            <tr>
+                <th>Hostname</th>
+                <th>IP/Domain</th>
+                <th>Status</th>
+                <th>Last Status Change</th>
+                <th>Last Check</th>
+                <th>Up Duration</th>
+                <th>Down Duration</th>
+                <th>Response Time</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Host status rows will be dynamically added here -->
+        </tbody>
+    </table>
+    <!-- Copyright Banner -->
+    <footer>
+        <p>© 2024 All rights reserved: Kali<br>
+        Discord: kalienclaquettes<br>
+        GitHub: <a href="https://github.com/Kali3159">Kali3159</a></p>
+    </footer>
+    <script src="/static/scripts.js"></script>
+</body>
+</html>
