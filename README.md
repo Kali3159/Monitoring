@@ -65,8 +65,5 @@ This program is designed to monitor the status of various hosts (IP addresses or
 6. **Toggle Notifications**:
    - Click the 'Notifications: ON/OFF' button to toggle notification settings for each host.
 
-## Screenshots
-- Place for screenshot of the interface.
-
 ## Support
 For any questions or support, please contact "Kali" on Discord at "kalienclaquettes" or visit the GitHub repository at https://github.com/Kali3159 for more information.
